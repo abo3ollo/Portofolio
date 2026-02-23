@@ -21,17 +21,17 @@ const EXPERIENCE = [
 const SOCIALS = [
     {
         label: "facebook",
-        href: "#",
+        href: "https://www.facebook.com/share/1DDRBtjK8X/?mibextid=wwXIfr",
         icon: <FaFacebookF />
     },
     {
         label: "Instagram",
-        href: "#",
+        href: "https://www.instagram.com/abdalrahman_aboollo?igsh=MThpdTliZXZ6Ymp2cA%3D%3D&utm_source=qr",
         icon: <FaInstagram />
     },
     {
         label: "Whatsapp",
-        href: "#",
+        href: "https://wa.me/1555743737",
         icon: <FaWhatsapp />
     },
 ];
