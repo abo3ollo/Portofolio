@@ -63,7 +63,7 @@ export default function HeroSection() {
 
                         {/* Heading */}
                         <h1
-                            className="text-7xl  mb-8 leading-[1.1] text-white"
+                            className="text-5xl md:text-7xl  mb-8 leading-[1.1] text-white"
                         >
 
                             <SplitText
