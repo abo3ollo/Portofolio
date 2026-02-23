@@ -27,7 +27,7 @@ export default function Navbar() {
       <ul
         className={`flex-col lg:flex-row flex lg:flex gap-8 lg:gap-12 list-none m-0 absolute lg:static top-16 left-0 right-0 bg-[#111111f2] lg:bg-transparent border-t lg:border-none border-white/10 lg:rounded-none rounded-b-2xl shadow-lg lg:shadow-none px-6 lg:px-0 py-6 lg:py-0 transition-all duration-300 ${menuOpen ? 'flex' : 'hidden'} lg:flex`}
       >
-        {["Services", "Projects", "Testimonials", "Contact"].map((item) => (
+        {["About", "Services", "Projects", "Contact"].map((item) => (
           <li key={item}>
             <Link
               href={`#${item.toLowerCase()}`}
@@ -45,7 +45,7 @@ export default function Navbar() {
           onClick={() => setMenuOpen(false)}
         >
           <StarIcon />
-          <span className="text-white/60 text-lg">Get for Free</span>
+          <span className="text-white/60 text-lg">Contact Me</span>
         </Link>
       
     </nav>

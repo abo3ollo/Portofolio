@@ -3,14 +3,18 @@
 
 import Link from "next/link";
 
-const TextType = require("@/components/TextType").default as any;
+
 const ShinyText = require("@/components/ShinyText").default as any;
+const SplitText = require("@/components/SplitText").default as any;
+
 
 
 export default function HeroSection() {
 
+    
+
     return (
-        <section className="relative flex flex-col items-center justify-center w-full min-h-screen overflow-hidden -mt-24 pt-54 pb-24 px-10">
+        <section className="relative flex flex-col items-center justify-center w-full min-h-screen overflow-hidden -mt-24 pt-54 pb-24 md:px-10">
             {/* ── Background Video ── */}
             <div className="absolute inset-0 z-0 pointer-events-none" style={{ opacity: 0.4 }}>
                 <video
@@ -26,6 +30,7 @@ export default function HeroSection() {
                 {/* Dark overlay */}
                 <div className="absolute inset-0 bg-black/40" />
             </div>
+
 
             {/* ── Main Content ── */}
             <div className="relative z-10 w-[80%] container  mx-auto">
@@ -60,14 +65,20 @@ export default function HeroSection() {
                         <h1
                             className="text-7xl  mb-8 leading-[1.1] text-white"
                         >
-                            <TextType
-                                text={["Abdelrahman Yehia"]}
-                                typingSpeed={60}
-                                deletingSpeed={50}
-                                pauseDuration={1500}
-                                showCursor
-                                cursorCharacter="_"
-                                cursorBlinkDuration={0.5}
+
+                            <SplitText
+                                text="Abdelrahman Yehia"
+                                
+                                delay={50}
+                                duration={1.25}
+                                ease="power3.out"
+                                splitType="chars"
+                                from={{ opacity: 0, y: 40 }}
+                                to={{ opacity: 1, y: 0 }}
+                                threshold={0.1}
+                                rootMargin="-100px"
+                                textAlign="center"
+                                showCallback
                             />
                         </h1>
 
@@ -75,6 +86,7 @@ export default function HeroSection() {
                         <p className="text-[#888] text-lg leading-relaxed mb-12 max-w-150">
                             I'm a versatile designer specializing in graphic, web, and product
                             design to help grow your business. Let's build something great!
+                            
                         </p>
 
                         {/* CTA Buttons */}
@@ -95,7 +107,7 @@ export default function HeroSection() {
                     </div>
 
                     {/* Right Column — Testimonials */}
-                    <div className="w-full md:w-2/5 flex items-center justify-center mt-10">
+                    <div className="hidden lg:w-2/5 lg:flex lg:items-center lg:justify-center ">
                         <div className="relative flex flex-col items-center gap-6 w-full max-w-sm">
                             <div
                                 className="w-[75%] self-start bg-white/3 border border-white/8 px-7 py-6 rounded-2xl backdrop-blur-[10px] animate-float-up"

@@ -27,7 +27,8 @@ export default function Projects() {
 
 
     return (
-        <section className="w-full  md:w-[65%] container  mx-auto  px-6 py-20 font-[Plus_Jakarta_Sans]">
+        <>
+        <section id="projects" className="w-full  md:w-[65%] container  mx-auto  px-6 py-20 font-[Plus_Jakarta_Sans]">
             <div className=" inline-flex items-center  gap-2 text-lg rounded-4xl px-4 py-2 mb-6"
                 style={{
                     boxShadow:
@@ -82,7 +83,8 @@ export default function Projects() {
                 />
             </div>
         </section>
-
+        <div className="h-px bg-white/6" />
+</>
     )
 }
 

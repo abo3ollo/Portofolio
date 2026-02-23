@@ -60,9 +60,9 @@ const techLogos = [
 
 export default function Services() {
     return (
-        <section className='bg-[#0a0a0a]'>
+        
 
-            <div className="w-full  md:w-[65%] container  mx-auto  px-6 py-20 font-[Plus_Jakarta_Sans]  ">
+            <section id='services' className="w-full  md:w-[65%] container  mx-auto  px-6 py-20 font-[Plus_Jakarta_Sans]  ">
                 <div className=" inline-flex items-center  gap-2 text-lg rounded-4xl px-4 py-2 mb-6"
                     style={{
                         boxShadow:
@@ -213,8 +213,8 @@ export default function Services() {
                         ariaLabel="Technology partners"
                     />
                 </div>
-            </div>
-        </section>
+            </section>
+        
     )
 }
 
