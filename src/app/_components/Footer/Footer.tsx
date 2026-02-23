@@ -1,9 +1,12 @@
 'use client'
+import { div } from 'motion/react-client';
 import Link from 'next/link';
 import { FaFacebookF, FaInstagram, FaWhatsapp } from 'react-icons/fa6';
 
 const ShinyText = require("@/components/ShinyText").default as any;
 const Galaxy = require("@/components/Galaxy").default as any;
+const SplitText = require("@/components/SplitText").default as any;
+
 
 const SOCIALS = [
     {
@@ -25,7 +28,8 @@ const SOCIALS = [
 
 export default function Footer() {
     return (
-        <footer id='contact' className="relative flex flex-col items-center justify-center w-full min-h-screen overflow-hidden -mt-24 pt-54 pb-24 px-10">
+
+        <footer id='contact' className="relative flex flex-col items-center justify-center w-full min-h-screen overflow-hidden -mt-24 pt-54 pb-24 px-10 ">
             {/* ── Background  ── */}
             <div className="absolute inset-0 z-0 w-full h-full" >
                 <Galaxy style={{ width: '100%', height: '100%' }}
@@ -73,13 +77,28 @@ export default function Footer() {
 
                         {/* Heading */}
                         <h1 className="text-3xl w-full md:w-[60%] mx-auto mb-8 leading-[1.3] text-white ">
-                            Curious about what we can create together? Let’s bring something extraordinary to life!
+                            <SplitText
+                                text="Curious about what we can create together? Let’s bring something extraordinary to life!"
+
+                                delay={50}
+                                duration={1.25}
+                                ease="power3.out"
+                                splitType="chars"
+                                from={{ opacity: 0, y: 40 }}
+                                to={{ opacity: 1, y: 0 }}
+                                threshold={0.1}
+                                rootMargin="-100px"
+                                textAlign="center"
+                                showCallback
+                            />
+
                         </h1>
 
                         {/* Buttons */}
                         <div className="flex gap-4 flex-wrap text-center justify-center">
                             <Link
-                                href="#contact"
+                                target="_blank"
+                                href="https://wa.me/1555743737"
                                 className="px-10 py-3.5 rounded-[30px] text-base font-medium text-black bg-white border-none transition-all duration-300 hover:bg-[#e0e0e0] hover:-translate-y-0.5 "
                             >
                                 Contact Now

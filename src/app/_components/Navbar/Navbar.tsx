@@ -27,7 +27,7 @@ export default function Navbar() {
       <ul
         className={`flex-col lg:flex-row flex lg:flex gap-8 lg:gap-12 list-none m-0 absolute lg:static top-16 left-0 right-0 bg-[#111111f2] lg:bg-transparent border-t lg:border-none border-white/10 lg:rounded-none rounded-b-2xl shadow-lg lg:shadow-none px-6 lg:px-0 py-6 lg:py-0 transition-all duration-300 ${menuOpen ? 'flex' : 'hidden'} lg:flex`}
       >
-        {["About", "Services", "Projects", "Contact"].map((item) => (
+        {["About", "Projects", "Services", "Contact"].map((item) => (
           <li key={item}>
             <Link
               href={`#${item.toLowerCase()}`}
@@ -38,16 +38,17 @@ export default function Navbar() {
           </li>
         ))}
       </ul>
-      
-        <Link
-          href="#get-started"
+
+      <Link
+        target="_blank"
+        href="https://wa.me/1555743737"
         className="hidden lg:flex items-center gap-2 bg-transparent border border-[#333] text-white px-7 py-3 rounded-full text-base font-medium transition-all duration-300 hover:-translate-y-0.5 "
-          onClick={() => setMenuOpen(false)}
-        >
-          <StarIcon />
-          <span className="text-white/60 text-lg">Contact Me</span>
-        </Link>
-      
+        onClick={() => setMenuOpen(false)}
+      >
+        <StarIcon />
+        <span className="text-white/60 text-lg">Contact Me</span>
+      </Link>
+
     </nav>
   );
 }

@@ -11,7 +11,7 @@ const SplitText = require("@/components/SplitText").default as any;
 
 export default function HeroSection() {
 
-    
+
 
     return (
         <section className="relative flex flex-col items-center justify-center w-full min-h-screen overflow-hidden -mt-24 pt-54 pb-24 md:px-10">
@@ -68,7 +68,7 @@ export default function HeroSection() {
 
                             <SplitText
                                 text="Abdelrahman Yehia"
-                                
+
                                 delay={50}
                                 duration={1.25}
                                 ease="power3.out"
@@ -84,21 +84,22 @@ export default function HeroSection() {
 
                         {/* Description */}
                         <p className="text-[#888] text-lg leading-relaxed mb-12 max-w-150">
-                            I'm a versatile designer specializing in graphic, web, and product
-                            design to help grow your business. Let's build something great!
-                            
+                            I'm a frontend web developer dedicated to turning ideas into creative solutions. I specialize in creating seamless and intuitive user experiences.
+
                         </p>
 
                         {/* CTA Buttons */}
                         <div className="flex gap-4 flex-wrap">
                             <Link
-                                href="#projects"
+                                target="_blank"
+                                href="https://github.com/abo3ollo?tab=repositories"
                                 className="px-8 py-4 rounded-[30px] text-base font-medium text-white border border-white/20 bg-transparent transition-all duration-300 hover:bg-white/5 hover:border-white/30 no-underline"
                             >
                                 See All Projects
                             </Link>
                             <Link
-                                href="#contact"
+                                href="https://wa.me/1555743737"
+                                target="_blank"
                                 className="px-8 py-4 rounded-[30px] text-base font-medium text-black bg-white border-none transition-all duration-300 hover:bg-[#e0e0e0] hover:-translate-y-0.5 no-underline"
                             >
                                 Contact Now
