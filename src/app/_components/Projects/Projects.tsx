@@ -1,5 +1,6 @@
 "use client"
 
+import { url } from "inspector";
 import Link from "next/link";
 
 const ChromaGrid = require("@/components/ChromaGrid").default as any;
@@ -8,6 +9,10 @@ const ShinyText = require("@/components/ShinyText").default as any;
 
 
 const items = [
+    {
+        image : "/hospital system.jpeg",
+        url:" https://github.com/abo3ollo/hospital-system.git"
+    },
     {
         image: '/mobile responsive.jpeg',
         url: 'https://e-commerce-heavenly.vercel.app/'
@@ -20,6 +25,7 @@ const items = [
         image: '/yummy.jpeg',
         url: 'https://abo3ollo.github.io/Yummy-Website/'
     },
+    
 
 ];
 
@@ -88,7 +94,7 @@ export default function Projects() {
                     data-aos-duration="3000" // Optional: specific duration for this element
                 // style={{ height: '10vh' }}
                 >
-                    <div style={{ height: '500px', position: 'relative' }}>
+                    <div style={{ height: '1100px', position: 'relative' }}>
                         <ChromaGrid
 
                             items={items}
