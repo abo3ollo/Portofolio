@@ -11,7 +11,7 @@ const ShinyText = require("@/components/ShinyText").default as any;
 const items = [
     {
         image : "/hospital system.jpeg",
-        url:" https://github.com/abo3ollo/hospital-system.git"
+        url:"https://hospital-system-omega.vercel.app/"
     },
     {
         image: '/mobile responsive.jpeg',
