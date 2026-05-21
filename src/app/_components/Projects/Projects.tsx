@@ -10,6 +10,10 @@ const ShinyText = require("@/components/ShinyText").default as any;
 
 const items = [
     {
+        image : "/servix.png",
+        url:"https://restaurant-system-management-lake.vercel.app/"
+    },
+    {
         image : "/hospital system.jpeg",
         url:"https://hospital-system-omega.vercel.app/"
     },
