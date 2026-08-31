@@ -48,7 +48,7 @@ export default function HeroSection() {
                         >
                             <CircleDotIcon />
                             <ShinyText
-                                text="Frontend Developer"
+                                text="Full-stack Developer"
                                 speed={2}
                                 delay={0}
                                 color="#b5b5b5"
@@ -84,7 +84,7 @@ export default function HeroSection() {
 
                         {/* Description */}
                         <p className="text-[#888] text-lg leading-relaxed mb-12 max-w-150">
-                            I'm a frontend web developer dedicated to turning ideas into creative solutions. I specialize in creating seamless and intuitive user experiences.
+                            I'm a full-stack web developer dedicated to turning ideas into creative solutions. I specialize in creating seamless and intuitive user experiences.
 
                         </p>
 

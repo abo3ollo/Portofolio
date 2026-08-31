@@ -10,11 +10,12 @@ const LightRays = require("@/components/LightRays").default as any;
 import { FaFacebookF, FaInstagram, FaWhatsapp, FaXTwitter } from "react-icons/fa6";
 
 
-const SKILLS = ["HTML", "CSS", "JavaScript", "Bootstrap", "Tailwind", "React", "Next", "Git", "GitHub"];
+const SKILLS = ["HTML", "CSS", "JavaScript", "Bootstrap", "Tailwind", "React", "Next","shadcn/ui", "hero/ui",  "Git", "GitHub" , "Vercel" ,"Convex" , "Clerk" ];
 
 const EXPERIENCE = [
     { role: "Student", company: "AAST", year: "2024" },
     { role: "Frontend Developer", company: "Route Academy", year: "2026" },
+    { role: "Full-Stack Developer", company: "Freelance", year: "2026-2027" },
 
 ];
 
@@ -76,12 +77,12 @@ export default function AboutSection() {
                         style={{
                             boxShadow:
                                 "16px 24px 20px 8px rgba(0,0,0,0.4), 0px 2px 0px 0px rgba(184,180,180,0.08) inset",
-                            textShadow: "0 2px 4px rgba(0,0,0,0.3)",
+                            textShadow: "0 2px 4px rgba(0,0,0,0.3)"
                         }}
                     >
                         <CircleDotIcon />
                         <ShinyText
-                            text="Frontend Developer"
+                            text="Full-stack Developer"
                             speed={2}
                             delay={0}
                             color="#b5b5b5"
@@ -97,7 +98,7 @@ export default function AboutSection() {
                     {/* ── Heading ── */}
                     <h1 className="text-5xl md:text-6xl font-light text-center mb-4 tracking-tight">
                         <span className="text-white">Abdelrahman,</span>{" "}
-                        <span className="text-white/30">Frontend Developer</span>
+                        <span className="text-white/30">Full-stack Developer</span>
                     </h1>
 
                     {/* ── Subheading ── */}
@@ -136,7 +137,7 @@ export default function AboutSection() {
                             {/* Name & title */}
                             <div>
                                 <h2 className="text-white text-2xl font-semibold mb-1">Hello I am Abdelrahman Yehia</h2>
-                                <p className="text-white/40 text-md">Frontend Developer Based in Egypt.</p>
+                                <p className="text-white/40 text-md">Full-stack Developer Based in Egypt.</p>
                             </div>
 
                             {/* Socials */}
@@ -171,8 +172,8 @@ export default function AboutSection() {
                         <div className="bg-[#111] border border-white/[0.07] rounded-2xl p-8 flex flex-col gap-6">
                             {/* Bio */}
                             <p className="text-white/70 text-base leading-relaxed">
-                                Hi! I'm Abdelrahman. A creative Frontend Developer with  {" "}
-                                <span className="text-white">1+ years of experience</span>. in building high-performance, scalable, and responsive web solutions.
+                                Hi! i'm Abdelrahman.
+                                Full-Stack JavaScript Developer with <span className="text-white">1+ years of experience</span>. building production-ready SaaS applications using Next.js, TypeScript, Convex, Clerk, and Tailwind CSS. Skilled in designing scalable architectures, real-time systems, authentication, and responsive user experiences. Passionate about delivering maintainable, high-performance software.  
                             </p>
 
                             {/* Divider */}
