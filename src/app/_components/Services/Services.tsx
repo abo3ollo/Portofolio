@@ -1,19 +1,21 @@
 "use client"
 import Link from 'next/link'
-import {
-    Card,
-    CardAction,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card"
 import { DiRequirejs } from 'react-icons/di';
 import { MdOutlineDesignServices } from 'react-icons/md';
 import { FaCode } from 'react-icons/fa6';
-import { SiNextdotjs, SiReact, SiTailwindcss, SiTestcafe, SiTypescript } from 'react-icons/si';
-import { section } from 'motion/react-client';
+import {
+    SiReact,
+    SiNextdotjs,
+    SiTypescript,
+    SiTailwindcss,
+    SiNodedotjs,
+    SiExpress,
+    SiMongodb,
+    SiJsonwebtokens,
+    SiSocketdotio,
+    SiTestcafe,
+} from "react-icons/si";
+
 
 
 const ShinyText = require("@/components/ShinyText").default as any;
@@ -52,10 +54,15 @@ const data = [
 ];
 
 const techLogos = [
-    { node: <SiReact />, title: "React", href: "https://react.dev" },
-    { node: <SiNextdotjs />, title: "Next.js", href: "https://nextjs.org" },
-    { node: <SiTypescript />, title: "TypeScript", href: "https://www.typescriptlang.org" },
-    { node: <SiTailwindcss />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
+    { node: <SiReact />,        title: "React",        href: "https://react.dev" },
+    { node: <SiNextdotjs />,    title: "Next.js",      href: "https://nextjs.org" },
+    { node: <SiTypescript />,   title: "TypeScript",   href: "https://www.typescriptlang.org" },
+    { node: <SiTailwindcss />,  title: "Tailwind CSS", href: "https://tailwindcss.com" },
+    { node: <SiNodedotjs />,    title: "Node.js",      href: "https://nodejs.org" },
+    { node: <SiExpress />,      title: "Express.js",   href: "https://expressjs.com" },
+    { node: <SiMongodb />,      title: "MongoDB",      href: "https://www.mongodb.com" },
+    { node: <SiJsonwebtokens />,title: "JWT",          href: "https://jwt.io" },
+    { node: <SiSocketdotio />,  title: "Socket.IO",    href: "https://socket.io" },
 ];
 
 export default function Services() {
